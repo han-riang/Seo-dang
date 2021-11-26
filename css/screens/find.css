@@ -1,0 +1,109 @@
+.find-recommand {
+  margin: 0px var(--horizontal-space);
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.35);
+  height: 240px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.find-recommand__friend {
+  padding-top: 100px;
+  text-align: center;
+}
+.find-open-chat {
+  margin: 0px var(--horizontal-space);
+  padding-top: 20px;
+  border-top: var(--main-border);
+  font-weight: 500;
+  height: 100%;
+}
+.find-open-chat__row--header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+.find-open-chat__row {
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.find-open-chat__row__column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.find-open-chat__row__column:nth-child(2n) {
+  display: flex;
+  align-items: flex-end;
+  margin-left: -150px;
+}
+.find-open-chat__row__column__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.find-open-chat__row__column__hashtag {
+  color: rgba(0, 0, 0, 0.35);
+  padding: 10px 0px;
+  width: 100%;
+}
+.find-open-chat__row__column__members:not([class="Active-notification"]) {
+  color: rgba(0, 0, 0, 0.35);
+}
+.find-open-chat__row__column__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.find-open-chat__row__column:nth-child(2n) span {
+  position: absolute;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  font-size: 14px;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  font-weight: 400;
+  align-items: center;
+  width: 55px;
+  height: 26px;
+  justify-content: space-evenly;
+}
+.find-open-chat__row__column > img {
+  width: 95px;
+  height: 95px;
+  border-radius: 10%;
+}
+.Active-notification {
+  color: #fc7dcb;
+}
+.find-open-chat__row:nth-child(3) {
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  padding-top: 20px;
+}
+@keyframes lessmakeaheartbeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.find-open-chat__row__column:nth-child(2n) span:hover {
+  color: magenta;
+}
+.find-open-chat__row__column:nth-child(2n) span:hover .fa-heart {
+  animation: lessmakeaheartbeat 2s linear infinite;
+}
