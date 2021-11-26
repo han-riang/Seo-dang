@@ -1,0 +1,23 @@
+.settings-header {
+  display: flex;
+  padding: 10px var(--horizontal-space);
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.settings-header__text {
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+}
+.settings-header__search i {
+  margin: 0px 10px;
+}
+
+.settings-header__column {
+  width: 33%;
+}
+.settings-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
